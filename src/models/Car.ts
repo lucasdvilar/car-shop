@@ -2,7 +2,7 @@ import { Schema, model as mongooseCreateModel } from 'mongoose';
 import { ICar } from '../interfaces/ICar';
 import MongoModel from './MongoModel';
 
-const carMongooseSchema = new Schema({
+const carMongooseSchema = new Schema<ICar>({
   model: String,
   year: Number,
   color: String,
